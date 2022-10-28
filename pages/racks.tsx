@@ -34,8 +34,8 @@ const BikeRacksPage = () => {
               <h1 className="text-2xl text-white">Description</h1>
               <hr className="border border-white" />
               <p className="mt-2 text-white">
-                18"-diameter, cast-metal circle installed on retired parking
-                meter poles.
+                18&quot;-diameter, cast-metal circle installed on retired
+                parking meter poles.
               </p>
               <h1 className="text-2xl text-white mt-3">Siting:</h1>
               <ul className="list-disc text-white ml-5">
@@ -58,8 +58,8 @@ const BikeRacksPage = () => {
               <h1 className="text-2xl text-white">Description</h1>
               <hr className="border border-white" />
               <p className="mt-2 text-white">
-                33.7"-diameter, cast-metal circle with a horizontal bar across
-                the center meter poles.
+                33.7&quot;-diameter, cast-metal circle with a horizontal bar
+                across the center meter poles.
               </p>
               <h1 className="text-2xl text-white mt-3">Siting:</h1>
               <ul className="list-disc text-white ml-5">

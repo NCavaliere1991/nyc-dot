@@ -85,7 +85,7 @@ const DataPage = () => {
                         objectid: string
                         date_inst: string
                       }) => (
-                        <tr>
+                        <tr key={d.objectid}>
                           <td className="border border-black text-xs lg:text-base lg:p-4">
                             {d.objectid}
                           </td>
@@ -113,7 +113,7 @@ const DataPage = () => {
                       objectid: string
                       date_inst: string
                     }) => (
-                      <tr>
+                      <tr key={d.objectid}>
                         <td className="border border-black text-xs lg:text-base lg:p-4">
                           {d.objectid}
                         </td>

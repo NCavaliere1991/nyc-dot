@@ -61,7 +61,7 @@ export default function BoroughSelector(props: {
                   {props.selectedBorough === ''
                     ? 'All Boroughs'
                     : props.selectedBorough}
-                  <img src="/arrow-down.svg" />
+                  <img src="https://ncavaliere1991.github.io/nyc-dot/arrow-down.svg" />
                 </Menu.Button>
               </div>
               <Transition

@@ -41,7 +41,7 @@ const Header = () => {
               >
                 <img
                   className="lg:hidden"
-                  src="/hamburger.webp"
+                  src="https://ncavaliere1991.github.io/nyc-dot/hamburger.svg"
                   width={40}
                   height={40}
                   alt="Account"

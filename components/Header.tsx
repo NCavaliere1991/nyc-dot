@@ -63,12 +63,12 @@ const Header = () => {
           </div>
           <div onClick={() => setIsOpen(false)}>
             <Link href="/racks" passHref>
-              Bike Racks
+              Bike Rack Types
             </Link>
           </div>
           <div onClick={() => setIsOpen(false)}>
             <Link href="/data" passHref>
-              Data
+              Bike Rack Data
             </Link>
           </div>
         </div>

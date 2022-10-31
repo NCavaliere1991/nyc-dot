@@ -2,10 +2,10 @@ import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import BoroughSelector from '../components/BoroughSelector'
 import Header from '../components/Header'
+import { formatDate } from '../utilities/formatDate'
 
 const DataPage = () => {
   const [data, setData] = useState([])
-  // const [selectedNeighborhood, setSelectedNeighborhood] = useState<any>('All')
   const [selectedBorough, setSelectedBorough] = useState('All Boroughs')
   const boroughTags = [
     'Bronx',
@@ -86,20 +86,22 @@ const DataPage = () => {
                         date_inst: string
                       }) => (
                         <tr key={d.objectid}>
-                          <td className="border border-black text-xs lg:text-base lg:p-4">
+                          <td className="border border-black text-center text-xs lg:text-base lg:p-4">
                             {d.objectid}
                           </td>
-                          <td className="border border-black text-xs lg:text-base lg:p-4">
+                          <td className="border border-black text-center text-xs lg:text-base lg:p-4">
                             {d.boro_name}
                           </td>
-                          <td className="border border-black text-xs lg:text-base lg:p-4">
+                          <td className="border border-black text-center text-xs lg:text-base lg:p-4">
                             {d.ifoaddress}
                           </td>
-                          <td className="border border-black text-xs lg:text-base lg:p-4">
+                          <td className="border border-black text-center text-xs lg:text-base lg:p-4">
                             {d.assetsubty}
                           </td>
-                          <td className="border border-black text-xs lg:text-base lg:p-4">
-                            {d.date_inst?.slice(0, 10)}
+                          <td className="border border-black text-center text-xs lg:text-base lg:p-4">
+                            {d.date_inst
+                              ? formatDate(d.date_inst?.slice(0, 10))
+                              : 'no date provided'}
                           </td>
                         </tr>
                       )
@@ -114,20 +116,20 @@ const DataPage = () => {
                       date_inst: string
                     }) => (
                       <tr key={d.objectid}>
-                        <td className="border border-black text-xs lg:text-base lg:p-4">
+                        <td className="border border-black text-center text-xs lg:text-base lg:p-4">
                           {d.objectid}
                         </td>
-                        <td className="border border-black text-xs lg:text-base lg:p-4">
+                        <td className="border border-black text-center text-xs lg:text-base lg:p-4">
                           {d.boro_name}
                         </td>
-                        <td className="border border-black text-xs lg:text-base lg:p-4">
+                        <td className="border border-black text-center text-xs lg:text-base lg:p-4">
                           {d.ifoaddress}
                         </td>
-                        <td className="border border-black text-xs lg:text-base lg:p-4">
+                        <td className="border border-black text-center text-xs lg:text-base lg:p-4">
                           {d.assetsubty}
                         </td>
-                        <td className="border border-black text-xs lg:text-base lg:p-4">
-                          {d.date_inst?.slice(0, 10)}
+                        <td className="border border-black text-center text-xs lg:text-base lg:p-4">
+                          {formatDate(d.date_inst?.slice(0, 10))}
                         </td>
                       </tr>
                     )

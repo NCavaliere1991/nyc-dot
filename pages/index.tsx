@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/Header'
 import Link from 'next/link'
+import bikeRackPic from '../public/new-bike-rack.webp'
 
 export default function Home() {
   return (
@@ -23,12 +24,23 @@ export default function Home() {
           </p>
           <div className="flex flex-col lg:flex-row mt-8">
             <Link
-              className="border bg-black text-white font-semibold lg:mr-8"
+              className="border bg-black text-white font-semibold mb-5 lg:mb-0 lg:mr-8"
               href="/racks"
             >
-              <img src="/new-bike-rack.webp" alt="bike rack" width={600} />
+              {/* <Image
+                src="/static/new-bike-rack.webp"
+                alt="bike rack"
+                width={600}
+                height={600}
+              /> */}
+              <img
+                src="/static/new-bike-rack.webp"
+                alt="bike rack"
+                width={600}
+              />
               <p className="lg:w-2/3 text-center mx-auto p-2">
-                Click here see the types of bike racks found throughout the city
+                Click here to see the types of bike racks found throughout the
+                city
               </p>
             </Link>
             <Link
@@ -36,7 +48,7 @@ export default function Home() {
               href="/data"
             >
               <img
-                src="/share-data.png"
+                src="/static/share-data.png"
                 alt="bike rack"
                 width={500}
                 height={200}

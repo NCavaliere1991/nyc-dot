@@ -27,7 +27,7 @@ export default function Home() {
               href="/racks"
             >
               <img
-                src="/static/new-bike-rack.webp"
+                src="/new-bike-rack.webp"
                 alt="bike rack"
                 width={600}
                 height={600}
@@ -42,7 +42,7 @@ export default function Home() {
               href="/data"
             >
               <img
-                src="/static/share-data.png"
+                src="/share-data.png"
                 alt="bike rack"
                 width={500}
                 height={200}

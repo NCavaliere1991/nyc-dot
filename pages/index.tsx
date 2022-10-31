@@ -2,13 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/Header'
 import Link from 'next/link'
-import bikeRackPic from '../public/new-bike-rack.webp'
-
-const myLoader = ({ src, width, quality }: any) => {
-  return `https://ncavaliere1991.github.io/nyc-dot/${src}?w=${width}&q=${
-    quality || 75
-  }`
-}
 
 export default function Home() {
   return (
@@ -33,8 +26,7 @@ export default function Home() {
               className="border bg-black text-white font-semibold mb-5 lg:mb-0 lg:mr-8"
               href="/racks"
             >
-              <Image
-                loader={myLoader}
+              <img
                 src="/static/new-bike-rack.webp"
                 alt="bike rack"
                 width={600}
@@ -49,8 +41,7 @@ export default function Home() {
               className="border bg-black text-white font-semibold"
               href="/data"
             >
-              <Image
-                loader={myLoader}
+              <img
                 src="/static/share-data.png"
                 alt="bike rack"
                 width={500}

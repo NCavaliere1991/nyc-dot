@@ -4,6 +4,12 @@ import Header from '../components/Header'
 import Link from 'next/link'
 import bikeRackPic from '../public/new-bike-rack.webp'
 
+const myLoader = ({ src, width, quality }: any) => {
+  return `https://ncavaliere1991.github.io/nyc-dot/${src}?w=${width}&q=${
+    quality || 75
+  }`
+}
+
 export default function Home() {
   return (
     <div>
@@ -27,16 +33,12 @@ export default function Home() {
               className="border bg-black text-white font-semibold mb-5 lg:mb-0 lg:mr-8"
               href="/racks"
             >
-              {/* <Image
+              <Image
+                loader={myLoader}
                 src="/static/new-bike-rack.webp"
                 alt="bike rack"
                 width={600}
                 height={600}
-              /> */}
-              <img
-                src="/static/new-bike-rack.webp"
-                alt="bike rack"
-                width={600}
               />
               <p className="lg:w-2/3 text-center mx-auto p-2">
                 Click here to see the types of bike racks found throughout the
@@ -47,7 +49,8 @@ export default function Home() {
               className="border bg-black text-white font-semibold"
               href="/data"
             >
-              <img
+              <Image
+                loader={myLoader}
                 src="/static/share-data.png"
                 alt="bike rack"
                 width={500}

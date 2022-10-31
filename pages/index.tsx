@@ -27,7 +27,7 @@ export default function Home() {
               href="/racks"
             >
               <img
-                src="/new-bike-rack.webp"
+                src="https://ncavaliere1991.github.io/nyc-dot/new-bike-rack.webp"
                 alt="bike rack"
                 width={600}
                 height={600}
@@ -42,7 +42,7 @@ export default function Home() {
               href="/data"
             >
               <img
-                src="/share-data.png"
+                src="https://ncavaliere1991.github.io/nyc-dot/share-data.png"
                 alt="bike rack"
                 width={500}
                 height={200}

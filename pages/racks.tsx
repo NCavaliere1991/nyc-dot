@@ -23,7 +23,7 @@ const BikeRacksPage = () => {
             <p className="font-bold text-2xl text-white lg:mr-16">
               Small Hoop Bike Rack:{' '}
               <img
-                src="/small-hoop.webp"
+                src="https://ncavaliere1991.github.io/nyc-dot/small-hoop.webp"
                 width={500}
                 height={500}
                 alt="small hoop"
@@ -47,7 +47,7 @@ const BikeRacksPage = () => {
             <p className="font-bold text-2xl text-white lg:mr-16">
               Large Hoop Bike Rack:{' '}
               <img
-                src="/large-hoop.webp"
+                src="https://ncavaliere1991.github.io/nyc-dot/large-hoop.webp"
                 width={500}
                 height={500}
                 alt="large hoop"
@@ -81,7 +81,7 @@ const BikeRacksPage = () => {
             <p className="font-bold text-2xl text-white lg:mr-16">
               U-Rack Bike Rack:{' '}
               <img
-                src="/u-rack.jpeg"
+                src="https://ncavaliere1991.github.io/nyc-dot/u-rack.jpeg"
                 width={500}
                 height={500}
                 alt="u-rack"
@@ -101,7 +101,7 @@ const BikeRacksPage = () => {
             <p className="font-bold text-2xl text-white lg:mr-16">
               Wave Rack Bike Rack:{' '}
               <img
-                src="/wave-rack.webp"
+                src="https://ncavaliere1991.github.io/nyc-dot/wave-rack.webp"
                 width={500}
                 height={500}
                 alt="small hoop"

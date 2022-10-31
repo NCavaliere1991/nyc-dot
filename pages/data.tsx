@@ -101,7 +101,7 @@ const DataPage = () => {
                           <td className="border border-black text-center text-xs lg:text-base lg:p-4">
                             {d.date_inst
                               ? formatDate(d.date_inst?.slice(0, 10))
-                              : 'no date provided'}
+                              : 'No Date Provided'}
                           </td>
                         </tr>
                       )
@@ -129,7 +129,9 @@ const DataPage = () => {
                           {d.assetsubty}
                         </td>
                         <td className="border border-black text-center text-xs lg:text-base lg:p-4">
-                          {formatDate(d.date_inst?.slice(0, 10))}
+                          {d.date_inst
+                            ? formatDate(d.date_inst?.slice(0, 10))
+                            : 'No Date Provided'}
                         </td>
                       </tr>
                     )

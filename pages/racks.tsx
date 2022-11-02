@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 
 const BikeRacksPage = () => {
@@ -27,7 +28,7 @@ const BikeRacksPage = () => {
                 width={500}
                 height={500}
                 alt="small hoop"
-                className="mt-2"
+                className="mt-2 border rounded-md"
               />
             </p>
             <div className="flex flex-col mt-5 lg:mt-0">
@@ -51,7 +52,7 @@ const BikeRacksPage = () => {
                 width={500}
                 height={500}
                 alt="large hoop"
-                className="mt-2"
+                className="mt-2 border rounded-md"
               />
             </p>
             <div className="flex flex-col mt-5 lg:mt-0">
@@ -85,7 +86,7 @@ const BikeRacksPage = () => {
                 width={500}
                 height={500}
                 alt="u-rack"
-                className="mt-2"
+                className="mt-2 border rounded-md"
               />
             </p>
             <div className="flex flex-col mt-5 lg:mt-0">
@@ -105,7 +106,7 @@ const BikeRacksPage = () => {
                 width={500}
                 height={500}
                 alt="small hoop"
-                className="mt-2"
+                className="mt-2 border rounded-md"
               />
             </p>
             <div className="flex flex-col mt-5 lg:mt-0">
@@ -118,6 +119,7 @@ const BikeRacksPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

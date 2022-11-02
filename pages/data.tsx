@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import BoroughSelector from '../components/BoroughSelector'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 import { formatDate } from '../utilities/formatDate'
 
@@ -39,7 +40,11 @@ const DataPage = () => {
       </Head>
       <Header />
       <div className="bg-gray-600 lg:px-32">
-        <div className="flex flex-col items-center justify-center bg-white p-4 lg:p-8">
+        <div
+          className={`flex flex-col items-center justify-center bg-white p-4 ${
+            selectedBorough === 'Staten Island' ? 'mb-28' : 'mb-10'
+          } lg:mb-0 lg:p-8`}
+        >
           <h1 className="text-center lg:w-1/3 text-lg text-blue-800 font-semibold">
             The New York City Department of Transportation has collected data on
             all bike racks installed throughout the city. The table below
@@ -140,6 +145,7 @@ const DataPage = () => {
           </table>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

@@ -12,7 +12,7 @@ const BikeRacksPage = () => {
       </Head>
       <Header />
       <div className="bg-gray-500 lg:px-32">
-        <div className="container p-8 lg:px-28 bg-white">
+        <div className="p-8 lg:px-28 bg-white">
           <div className="lg:w-1/2 text-lg text-center mx-auto">
             <h1 className="font-semibold text-blue-800">
               New York City provides free bicycle parking on sidewalks

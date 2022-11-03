@@ -41,7 +41,7 @@ const DataPage = () => {
       <Header />
       <div className="bg-gray-600 lg:px-32">
         <div
-          className={`flex flex-col items-center justify-center bg-white p-4 ${
+          className={`flex flex-col items-center justify-center bg-white p-4 min-h-screen ${
             selectedBorough === 'Staten Island' ? 'mb-28' : 'mb-10'
           } lg:mb-0 lg:p-8`}
         >

@@ -14,7 +14,7 @@ export default function Home() {
 
       <Header />
       <div className="bg-gray-500 lg:px-56">
-        <main className="flex flex-col p-8 lg:pb-32 items-center bg-white">
+        <main className="flex flex-col p-8 md:min-h-screen items-center bg-white">
           <h1 className="text-3xl font-bold text-blue-800">
             Welcome to the New York City Department of Transportation
           </h1>

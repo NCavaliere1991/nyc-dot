@@ -22,7 +22,7 @@ const BikeRacksPage = () => {
           </div>
           <div className="flex flex-col lg:flex-row items-center mt-5 border rounded-lg border-black p-8 bg-green-800">
             <p className="font-bold text-2xl text-white lg:mr-16">
-              Small Hoop Bike Rack:{' '}
+              Small Hoop:{' '}
               <img
                 src="https://ncavaliere1991.github.io/nyc-dot/small-hoop.webp"
                 width={500}
@@ -46,7 +46,7 @@ const BikeRacksPage = () => {
           </div>
           <div className="flex flex-col lg:flex-row items-center mt-5 border rounded-lg border-black p-8 bg-green-800">
             <p className="font-bold text-2xl text-white lg:mr-16">
-              Large Hoop Bike Rack:{' '}
+              Large Hoop:{' '}
               <img
                 src="https://ncavaliere1991.github.io/nyc-dot/large-hoop.webp"
                 width={500}
@@ -80,7 +80,7 @@ const BikeRacksPage = () => {
           </div>
           <div className="flex flex-col lg:flex-row items-center mt-5 border rounded-lg border-black p-8 bg-green-800">
             <p className="font-bold text-2xl text-white lg:mr-16">
-              U-Rack Bike Rack:{' '}
+              U-Rack:{' '}
               <img
                 src="https://ncavaliere1991.github.io/nyc-dot/u-rack.jpeg"
                 width={500}
@@ -100,7 +100,7 @@ const BikeRacksPage = () => {
           </div>
           <div className="flex flex-col lg:flex-row items-center mt-5 border rounded-lg border-black p-8 bg-green-800">
             <p className="font-bold text-2xl text-white lg:mr-16">
-              Wave Rack Bike Rack:{' '}
+              Wave Rack:{' '}
               <img
                 src="https://ncavaliere1991.github.io/nyc-dot/wave-rack.webp"
                 width={500}
